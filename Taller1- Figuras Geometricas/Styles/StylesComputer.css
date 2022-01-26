@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-image: URL('../Imagenes/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* Estilos header */
 header{
-    background-color: aquamarine;
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -14,6 +17,9 @@ header{
 }
 header h1,footer p{
     margin-left: 20px;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 /* Estilos main */
@@ -22,26 +28,60 @@ main{
     height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     flex-basis: 450px;
 }
+main section{
+    width: 300px;
+    height: 70vh;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
 
+}
+main section figure{
+    height: 40%;
+}
+main section figure img{
+    height: 100%;
+}
+main section h2{
+    text-align: center;
+    height: 10%;
+    width: 100%;
+}
+main section form{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main section form label{
+    width: 40%;
+}
+main section form input{
+    width: 40%;
+    height: 30px;
+}
+main section form button{
+    width: 80%;
+    height: 30px;
+}
 /* Estilos Footer */
 footer{
     width: 100vw;
     height: 10vh;
     display: flex;
     align-items: center;
-    background-color: beige;
 }
-main section{
-    width: 300px;
-    height: 70vh;
-    border: solid 2px black;
-    margin: 20px;
-}
-
 
 /* Media Queries para pantallas muy grand */
 @media (min-width: 1400px){

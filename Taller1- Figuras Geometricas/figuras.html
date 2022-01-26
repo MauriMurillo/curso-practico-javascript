@@ -16,18 +16,26 @@
     <main>
         <section class="square">
             <h2>Cuadrado</h2>
+            <figure>
+                <img src="./Imagenes/square.png" alt="">
+            </figure>
             <form>
                 <label for="side-square"> Lado del Cuadrado</label>
                 <input type="number" id="side-square">
                 <button type="button" onclick="Square()">
                     Calcular
                 </button>
+                <label for="perimeter-square"> Perimetro </label>
                 <input type="number" id="perimeter-square" disabled>
-                <input type="number" id="area-triangle" disabled>
+                <label for="area-square"> Area</label>
+                <input type="number" id="area-square" disabled>
             </form>
         </section>
         <section class="Triangulo">
             <h2>Triangulo</h2>
+            <figure>
+                <img src="./Imagenes/triangulo.png" alt="">
+            </figure>
             <form>
                 <label for="side-triangle"> Lado 1</label>
                 <input type="number" id="side1-triangle">
@@ -38,19 +46,26 @@
                 <button type="button" onclick="Triangle()">
                     Calcular
                 </button>
+                <label for="perimeter-triangle"> Perimetro </label>
                 <input type="number" id="perimeter-triangle" disabled>
+                <label for="area-triangle"> Area</label>
                 <input type="number" id="area-triangle" disabled>
             </form>
         </section>
         <section class="Circulo">
             <h2>Circulo</h2>
+            <figure>
+                <img src="./Imagenes/icone-cercle-noir.png" alt="">
+            </figure>
             <form>
                 <label for="radius-circle"> Radio del Circulo</label>
                 <input type="number" id="radius-circle">
                 <button type="button" onclick="Circle()">
                     Calcular
                 </button>
+                <label for="perimeter-circle"> Perimetro </label>
                 <input type="number" id="perimeter-circle" disabled>
+                <label for="area-circle"> Area</label>
                 <input type="number" id="area-circle" disabled>
             </form>
         </section>
