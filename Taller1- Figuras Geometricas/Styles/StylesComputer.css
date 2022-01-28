@@ -14,6 +14,7 @@ header{
     height: 10vh;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 header h1,footer p{
     margin-left: 20px;
@@ -81,6 +82,7 @@ footer{
     height: 10vh;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 /* Media Queries para pantallas muy grand */

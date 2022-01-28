@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/Stylesmini.css" media="screen and (max-width: 800px)">
+</head>
+<body>
+    <header>
+        <h1>Precios y Descuentos</h1>
+    </header>
+    <main>
+        <section>
+            <figure>
+                <img src="./Images/cropped-Logo-Precios-y-Descuentos.png" alt="">
+            </figure>
+            <p class="caption"> Aplica los descuentos y descubre el precio real </p>
+            <form>
+                <label for="precio"> Precio Original</label>
+                <input type="number" id="precio" oninput="CalcularDescuento()">
+                <label for="descuento"> Descuento </label>
+                <input  type="number" id="descuento" oninput="CalcularDescuento()">
+                <p id="resultado"> Precio con descuento $0</p>
+                <label for="coupon"> Cupon </label>
+                <input type="text" id="coupon">
+                <button type="button" onclick="AplicarCupon()">Aplicar Cupon</button>
+                <p id="resultadocupon">Precio con Cupon --</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Creado por Mauricio Murillo</p>
+    </footer>
+    <script src="./Porcentajes.js"></script>
+</body>
+</html>
