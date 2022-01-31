@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/Stylesmini.css" media="screen and (max-width: 800px)">
+</head>
+<body>
+    <header>
+        <h1>Media Moda y Mediana</h1>
+    </header>
+    <main>
+        <section>
+            <figure>
+                <img src="./Images/bayesian-2889576_640_opt.png" alt="">
+            </figure>
+            <p class="caption"> Calcula la media mediana y moda de un set de datos </p>
+            <form onkeypress="return event.keyCode != 13">
+                <label for="siguientevalor"> Introduce un valor a la lista</label>
+                <input id="siguientevalor" type="number">
+                <button type="button" onclick="Addvalue()"> Enviar </button>
+                <button type="button" onclick="Erasevalue()"> Borrar</button>
+                <button type="button" onclick="Clear()"> Limpiar </button>
+                <p id="Lista"> [ ] </p>
+                <button type="button" onclick="Calculate()" id="calc"> Calcular </button>
+                <p id="promedio"> Promedio: </p>
+                <p id="mediana"> Mediana: </p>
+                <p id="moda"> Moda: </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Creado por Mauricio Murillo</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
